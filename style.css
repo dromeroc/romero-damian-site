@@ -80,6 +80,7 @@ details[open] summary {
 details p {
   margin: 0.5em 0;
   font-size: 0.9em;
+  text-align: justify;
 }
 
 /* Responsive: stack sidebar and content */
