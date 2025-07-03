@@ -57,6 +57,11 @@ body {
   text-decoration: none; /* optional: remove underline */
 }
 
+.sidebar h1 {
+  font-size: 26px; /* or 28px, 32px – adjust as you like */
+  margin: 0;
+}
+
 /* Main content */
 .content {
   margin-left: 320px; /* Space for fixed sidebar */
@@ -121,7 +126,7 @@ html {
 .top-nav a {
   margin-right: 1.2em;
   text-decoration: none;
-  color: #0066cc;
+  color: #0000EE; /* Google blue */
   font-weight: bold;
 }
 
