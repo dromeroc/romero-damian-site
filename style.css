@@ -1,0 +1,101 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #333;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: left;
+  /*border-right: 1px solid #ddd;*/
+}
+
+/* Sidebar image */
+.sidebar .photo {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+/* Sidebar links */
+.sidebar a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+/* Sidebar paragraphs spacing */
+.sidebar p {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* Main content */
+.content {
+  margin-left: 320px; /* Space for fixed sidebar */
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* Headings */
+.content h2 {
+  padding-bottom: 4px;
+}
+
+/* Publication spacing */
+li.publication {
+  margin-bottom: 20px;
+}
+
+/* Details styling */
+details summary {
+  cursor: pointer;
+  color: #555;
+  font-size: 0.9em;
+}
+details[open] summary {
+  font-weight: bold;
+}
+details p {
+  margin: 0.5em 0;
+  font-size: 0.9em;
+}
+
+/* Responsive: stack sidebar and content */
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  .content {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
