@@ -51,6 +51,12 @@ body {
   margin-bottom: 0.3em;
 }
 
+.sidebar a:link,
+.sidebar a:visited {
+  color: #1a0dab; /* Google blue */
+  text-decoration: none; /* optional: remove underline */
+}
+
 /* Main content */
 .content {
   margin-left: 320px; /* Space for fixed sidebar */
