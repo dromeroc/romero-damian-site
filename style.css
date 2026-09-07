@@ -31,12 +31,12 @@ body {
 
 /* Sidebar image */
 .sidebar .photo {
-  width: 100%;
-  height: auto;
+  width: 280px;
+  height: 280px;
   border-radius: 4px;
   display: block;
   object-fit: cover;
-  margin-bottom: 1em;
+  margin: 0;
 }
 
 /* Sidebar links */
@@ -91,7 +91,7 @@ details[open] summary {
 details p {
   margin: 0.5em 0;
   font-size: 0.9em;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Responsive: stack sidebar and content */
@@ -105,6 +105,20 @@ details p {
     height: auto;
     border-right: none;
     border-bottom: 1px solid #ddd;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .sidebar .photo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 8px;
+  }
+  .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    margin-top: 8px;
   }
   .content {
     margin-left: 0;
